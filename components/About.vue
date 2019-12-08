@@ -6,7 +6,7 @@
         class="px-4 -mx-3 md:-mx-6 flex flex-wrap text-center md:text-left justify-center md:justify-between items-center"
       >
         <div class="w-full md:w-1/2 px-3 md:px-6">
-          <img src="/programmer.svg" alt="" class="max-w-full" />
+          <img src="programmer.svg" alt="" class="max-w-full" />
         </div>
         <div class="w-full md:w-1/2 px-3 md:px-6 my-4">
           <h4 class=" text-3xl font-bold text-gray-200">Who am I?</h4>
@@ -23,7 +23,7 @@
           <h4 class=" text-2xl font-black text-alt text-left mb-4 px-4">
             Technical Skills
           </h4>
-          <no-ssr>
+          <client-only>
             <carousel
               :paginationEnabled="false"
               :autoplay="true"
@@ -47,7 +47,7 @@
                 >
                   <div class="skill-holder">
                     <img
-                      :src="`/skills/${skill}`"
+                      :src="`skills/${skill}`"
                       :alt="skill"
                       :title="skill.split('.')[0]"
                       class=" max-w-full mb-3"
@@ -60,7 +60,7 @@
                 </div>
               </slide>
             </carousel>
-          </no-ssr>
+          </client-only>
         </div>
       </div>
     </div>

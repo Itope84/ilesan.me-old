@@ -97,17 +97,18 @@ export default {
     touchStart(e) {
       e.preventDefault()
       this.touchStartY = e.touches[0].clientY
+      console.log(this.touchStartY)
     },
     touchMove(e) {
-      if (this.inMove) return false
+      if (this.inMotion) return
       e.preventDefault()
       const currentY = e.touches[0].clientY
-      if (this.touchStartY < currentY) {
+      console.log(currentY, this.touchStartY)
+      if (this.touchStartY > currentY) {
         this.moveDown()
       } else {
         this.moveup()
       }
-      this.touchStartY = 0
       return false
     }
   }
