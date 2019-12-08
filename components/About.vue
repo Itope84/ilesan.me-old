@@ -3,7 +3,7 @@
     <div class="container  md:max-w-3xl">
       <!-- About Me -->
       <div
-        class="px-4 -mx-3 md:-mx-6 flex flex-wrap text-center md:text-left justify-center md:justify-between items-center"
+        class="px-4 flex flex-wrap text-center md:text-left justify-center md:justify-between items-center"
       >
         <div class="w-full md:w-1/2 px-3 md:px-6">
           <img src="programmer.svg" alt="" class="max-w-full" />
