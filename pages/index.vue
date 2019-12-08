@@ -33,12 +33,12 @@ export default {
       passive: false
     }) // Other browsers
 
-    window.addEventListener('touchstart', this.touchStart, {
-      passive: false
-    }) // mobile devices
-    window.addEventListener('touchmove', this.touchMove, {
-      passive: false
-    }) // mobile devices
+    // window.addEventListener('touchstart', this.touchStart, {
+    //   passive: false
+    // }) // mobile devices
+    // window.addEventListener('touchmove', this.touchMove, {
+    //   passive: false
+    // }) // mobile devices
   },
 
   destroyed() {
@@ -46,8 +46,8 @@ export default {
       passive: false
     }) // Other browsers
     window.removeEventListener('DOMMouseScroll', this.handleMouseWheel) // Mozilla Firefox
-    window.removeEventListener('touchstart', this.touchStart) // mobile devices
-    window.removeEventListener('touchmove', this.touchMove) // mobile devices
+    // window.removeEventListener('touchstart', this.touchStart) // mobile devices
+    // window.removeEventListener('touchmove', this.touchMove) // mobile devices
   },
   methods: {
     calculateSectionOffsets() {
