@@ -54,6 +54,8 @@ export default {
       const sections = document.querySelectorAll('.fullpage')
       this.sections = sections
 
+      console.log(this.sections)
+
       for (let i = 0; i < sections.length; i++) {
         this.offsets.push(sections[i].offsetTop)
       }
@@ -103,10 +105,10 @@ export default {
       if (this.inMotion) return
       e.preventDefault()
       const currentY = e.touches[0].clientY
-      console.log(currentY, this.touchStartY)
-      if (this.touchStartY > currentY) {
+      console.log(currentY - this.touchStartY)
+      if (this.touchStartY - currentY > 30) {
         this.moveDown()
-      } else {
+      } else if (this.touchStartY - currentY < -30) {
         this.moveup()
       }
       return false
