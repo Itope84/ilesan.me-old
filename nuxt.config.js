@@ -25,7 +25,7 @@ export default {
   /*
    ** Customize the progress-bar color
    */
-  loading: { color: '#fff' },
+  loading: { color: '#171d40' },
   /*
    ** Global CSS
    */
@@ -51,6 +51,14 @@ export default {
     '@nuxtjs/axios',
     '@nuxtjs/pwa'
   ],
+  pwa: {
+    manifest: {
+      name: 'ilesan.me',
+      lang: 'en',
+      background_color: '#171d40',
+      theme_color: '#171d40'
+    }
+  },
   /*
    ** Axios module configuration
    ** See https://axios.nuxtjs.org/options

@@ -24,7 +24,7 @@
             Technical Skills
           </h4>
           <client-only>
-            <carousel
+            <!-- <carousel
               :paginationEnabled="false"
               :autoplay="true"
               :autoplayTimeout="1000"
@@ -38,28 +38,31 @@
               class="my-carousel"
             >
               <slide
+
+                class="c-slide"
+              > -->
+            <div class="flex flex-wrap justify-center -mx-4">
+              <div
                 v-for="(skill, index) in skills"
                 :key="index"
-                class="c-slide"
+                class="mx-4 my-4 flex flex-col justify-between items-center"
               >
-                <div
-                  class="mx-4 h-full flex flex-col justify-between items-center"
-                >
-                  <div class="skill-holder">
-                    <img
-                      :src="`skills/${skill}`"
-                      :alt="skill"
-                      :title="skill.split('.')[0]"
-                      class=" max-w-full mb-3"
-                    />
-                  </div>
-
-                  <h6 class=" text-xl font-bold text-alt">
-                    {{ skill.split('.')[0] }}
-                  </h6>
+                <div class="skill-holder">
+                  <img
+                    :src="`skills/${skill}`"
+                    :alt="skill"
+                    :title="skill.split('.')[0]"
+                    class=" max-w-full mb-3"
+                  />
                 </div>
-              </slide>
-            </carousel>
+
+                <h6 class=" text-xl font-bold text-alt">
+                  {{ skill.split('.')[0] }}
+                </h6>
+              </div>
+            </div>
+            <!-- </slide>
+            </carousel> -->
           </client-only>
         </div>
       </div>
