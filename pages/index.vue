@@ -28,10 +28,10 @@ export default {
   mounted() {
     this.calculateSectionOffsets()
 
-    window.addEventListener('DOMMouseScroll', this.handleMouseWheel) // Mozilla Firefox
-    window.addEventListener('mousewheel', this.handleMouseWheel, {
-      passive: false
-    }) // Other browsers
+    // window.addEventListener('DOMMouseScroll', this.handleMouseWheel) // Mozilla Firefox
+    // window.addEventListener('mousewheel', this.handleMouseWheel, {
+    //   passive: false
+    // }) // Other browsers
 
     // window.addEventListener('touchstart', this.touchStart, {
     //   passive: false
