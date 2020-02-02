@@ -11,16 +11,16 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: process.env.npm_package_description || ''
-      }
+        content: process.env.npm_package_description || '',
+      },
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       {
         rel: 'stylesheet',
-        href: 'https://fonts.googleapis.com/css?family=Raleway&display=swap'
-      }
-    ]
+        href: 'https://fonts.googleapis.com/css?family=Raleway&display=swap',
+      },
+    ],
   },
   /*
    ** Customize the progress-bar color
@@ -41,7 +41,7 @@ export default {
     // Doc: https://github.com/nuxt-community/eslint-module
     '@nuxtjs/eslint-module',
     // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
-    '@nuxtjs/tailwindcss'
+    '@nuxtjs/tailwindcss',
   ],
   /*
    ** Nuxt.js modules
@@ -49,15 +49,15 @@ export default {
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
-    '@nuxtjs/pwa'
+    '@nuxtjs/pwa',
   ],
   pwa: {
     manifest: {
       name: 'ilesan.me',
       lang: 'en',
       background_color: '#171d40',
-      theme_color: '#171d40'
-    }
+      theme_color: '#171d40',
+    },
   },
   /*
    ** Axios module configuration
@@ -71,6 +71,6 @@ export default {
     /*
      ** You can extend webpack config here
      */
-    extend(config, ctx) {}
-  }
-}
+    // extend(config, ctx) { },
+  },
+};

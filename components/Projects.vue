@@ -1,9 +1,11 @@
 <template>
   <section class="projects fullpage flex flex-col justify-center">
     <div class="container  text-center md:max-w-3xl">
-      <h4 class=" text-3xl font-bold text-alt">Recent Projects</h4>
+      <h4 class=" text-3xl font-bold text-alt">
+        Recent Projects
+      </h4>
       <p class=" text-sm text-gray-300">
-        Here are some of my most recent projects. <br />
+        Here are some of my most recent projects. <br>
         Feel free to click on each to view details
       </p>
       <div class="my-10">
@@ -18,7 +20,9 @@
               <div
                 class="h-full flex-col items-center justify-center project-overlay"
               >
-                <h5 class="project-title">{{ project.title }}</h5>
+                <h5 class="project-title">
+                  {{ project.title }}
+                </h5>
               </div>
             </div>
           </div>
@@ -74,10 +78,10 @@ export default {
             .context(
               '../static/screenshots/jobsicle',
               true,
-              /(\.png$)|(\.svg)|(\.jpg)|(\.webp)/i
+              /(\.png$)|(\.svg)|(\.jpg)|(\.webp)/i,
             )
             .keys()
-            .map((key) => key.split('/').pop())
+            .map((key) => key.split('/').pop()),
         },
         {
           title: 'AceUp Elearning',
@@ -91,13 +95,13 @@ export default {
             .context(
               '../static/screenshots/aceup',
               true,
-              /(\.png$)|(\.svg)|(\.jpg)|(\.webp)/i
+              /(\.png$)|(\.svg)|(\.jpg)|(\.webp)/i,
             )
             .keys()
-            .map((key) => key.split('/').pop())
-        }
-      ]
-    }
-  }
-}
+            .map((key) => key.split('/').pop()),
+        },
+      ],
+    };
+  },
+};
 </script>

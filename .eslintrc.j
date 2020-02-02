@@ -2,6 +2,7 @@ module.exports = {
   root: true,
   env: {
     browser: true,
+    "es6": true,
     node: true
   },
   parserOptions: {
@@ -9,13 +10,12 @@ module.exports = {
   },
   extends: [
     '@nuxtjs',
-    'prettier',
-    'prettier/vue',
-    'plugin:prettier/recommended',
+    "airbnb-base",
+    "plugin:vue/recommended",
     'plugin:nuxt/recommended'
   ],
   plugins: [
-    'prettier'
+    // 'prettier'
   ],
   // add your custom rules here
   rules: {

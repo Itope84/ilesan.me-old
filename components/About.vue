@@ -3,20 +3,24 @@
     <div class="container  md:max-w-3xl">
       <!-- About Me -->
       <div
-        class="px-4 flex flex-wrap text-center md:text-left justify-center md:justify-between items-center"
+        class="px-4 flex flex-wrap text-center
+        md:text-left justify-center md:justify-between items-center"
       >
         <div class="w-full md:w-1/2 px-3 md:px-6">
-          <img src="programmer.svg" alt="" class="max-w-full" />
+          <img src="programmer.svg" alt="" class="max-w-full">
         </div>
         <div class="w-full md:w-1/2 px-3 md:px-6 my-4">
-          <h4 class=" text-3xl font-bold text-gray-200">Who am I?</h4>
+          <h4 class=" text-3xl font-bold text-gray-200">
+            Who am I?
+          </h4>
           <p class="text-gray-400">
             I am a fullstack software developer with more than 2 years of
             experience building smooth experiences both on websites and mobile
             apps. I currently work as a Frontend Developer at
-            <a href="https://patricia.com.ng" class="fancy-link"
-              >Patricia Technologies</a
-            >.
+            <a
+              href="https://patricia.com.ng"
+              class="fancy-link"
+            >Patricia Technologies</a>.
           </p>
         </div>
         <div class="w-full py-4 mt-4 md:mt-16">
@@ -53,7 +57,7 @@
                     :alt="skill"
                     :title="skill.split('.')[0]"
                     class=" max-w-full mb-3"
-                  />
+                  >
                 </div>
 
                 <h6 class=" text-xl font-bold text-alt">
@@ -85,10 +89,10 @@ export default {
       const files = require.context(
         '../static/skills',
         true,
-        /(\.png$)|(\.svg)/i
-      )
-      return files.keys().map((key) => key.split('/').pop())
-    }
-  }
-}
+        /(\.png$)|(\.svg)/i,
+      );
+      return files.keys().map((key) => key.split('/').pop());
+    },
+  },
+};
 </script>

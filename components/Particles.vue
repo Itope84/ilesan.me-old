@@ -4,7 +4,7 @@
       v-for="particle in particle_count"
       :key="particle"
       class="particle"
-    ></div>
+    />
   </div>
 </template>
 
@@ -47,8 +47,8 @@ $header-height: 500;
 export default {
   data() {
     return {
-      particle_count: 10
-    }
-  }
-}
+      particle_count: 10,
+    };
+  },
+};
 </script>
