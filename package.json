@@ -29,7 +29,7 @@
     "eslint-plugin-nuxt": ">=0.4.2",
     "eslint-plugin-prettier": "^3.0.1",
     "eslint-plugin-vue": "^6.1.2",
-    "node-sass": "^4.13.0",
+    "node-sass": "^4.13.1",
     "nuxt-purgecss": "^0.2.1",
     "nuxt-webfontloader": "^1.1.0",
     "prettier": "^1.16.4",
